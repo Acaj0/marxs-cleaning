@@ -13,7 +13,7 @@ export function HeroSection() {
       </div>
       <div className=" relative flex min-h-[600px] flex-col md:flex-row items-center justify-between py-12">
         <div className="w-full md:w-1/2 space-y-6  justify-center items-center flex flex-col">
-          <h1 className="text-5xl md:text-7xl font-bold text-center tracking-tighter">
+          <h1 className="text-5xl md:text-7xl font-bold md:text-left text-center tracking-tighter">
             SAY
             <br />
             FAREWELL
@@ -23,7 +23,7 @@ export function HeroSection() {
           <p className="max-w-[600px] font-semibold text-white/80">
             Top-notch cleaning services just a click away.
           </p>
-          <Button size="lg" variant="secondary">
+          <Button size="lg" variant="secondary" className="font-bold text-[#004B87]">
             GET A FREE QUOTE
           </Button>
         </div>

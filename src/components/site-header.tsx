@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import { AspectRatio } from "./ui/aspect-ratio";
 import { SheetContent, SheetTrigger, Sheet } from "./ui/sheet";
@@ -59,16 +59,28 @@ export default function SiteHeader() {
                   <h3 className="text-lg font-semibold"></h3>
                   <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                     <li className=" hover:underline">
-                      <a href="/interior">Interior painting</a>
+                      <a href="/interior">Regular Cleaning</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="exterior-painting">Exterior painting</a>
+                      <a href="exterior-painting">Deep Cleaning</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="commercial-painting">Commercial painting</a>
+                      <a href="commercial-painting">Move In/Out</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="new-construction">New Construction</a>
+                      <a href="new-construction">Vacation Home</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a href="new-construction">Vaction Home</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a href="new-construction">Post Construction</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a href="new-construction">Commercial</a>
+                    </li>
+                    <li className=" hover:underline">
+                      <a href="new-construction">Cancellation Policy</a>
                     </li>
                   </ul>
                 </NavigationMenuContent>
@@ -131,16 +143,28 @@ const MobileNav = () => {
                     <h3 className="text-lg font-semibold"></h3>
                     <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                       <li className=" hover:underline">
-                        <a href="/interior">Interior painting</a>
+                        <a href="/interior">Regular Cleaning</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="exterior-painting">Exterior painting</a>
+                        <a href="exterior-painting">Deep Cleaning</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="commercial-painting">Commercial painting</a>
+                        <a href="commercial-painting">Move In/Out</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="new-construction">New Construction</a>
+                        <a href="new-construction">Vacation Home</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a href="new-construction">Vaction Home</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a href="new-construction">Post Construction</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a href="new-construction">Commercial</a>
+                      </li>
+                      <li className=" hover:underline">
+                        <a href="new-construction">Cancellation Policy</a>
                       </li>
                     </ul>
                   </NavigationMenuContent>
