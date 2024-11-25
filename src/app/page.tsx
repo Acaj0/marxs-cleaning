@@ -6,7 +6,7 @@ import { ReviewsSection } from "@/components/reviews-section";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="relative flex min-h-screen flex-col overflow-clip">
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
