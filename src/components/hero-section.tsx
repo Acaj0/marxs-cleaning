@@ -20,7 +20,7 @@ export function HeroSection() {
             <br />
             <span className="text-4xl md:text-6xl">TO MESS!</span>
           </h1>
-          <p className="max-w-[600px] text-white/80">
+          <p className="max-w-[600px] font-semibold text-white/80">
             Top-notch cleaning services just a click away.
           </p>
           <Button size="lg" variant="secondary">
