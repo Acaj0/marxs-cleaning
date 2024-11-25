@@ -11,7 +11,7 @@ export function HeroSection() {
           ))}
         </div>
       </div>
-      <div className=" relative flex min-h-[600px] flex-col md:flex-row items-center justify-between py-12">
+      <div className=" relative flex min-h-[600px] flex-col md:flex-row items-center justify-between py-12 mb-20 md:mb-2">
         <div className="w-full md:w-1/2 space-y-6  justify-center items-center flex flex-col">
           <h1 className="text-5xl md:text-7xl font-bold md:text-left text-center tracking-tighter">
             SAY
@@ -27,7 +27,7 @@ export function HeroSection() {
             GET A FREE QUOTE
           </Button>
         </div>
-        <div className="w-full md:w-1/2 mt-28 md:mt-0">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="relative h-[400px] w-full">
             <Image
               src="/happyfam.jpg"
@@ -36,7 +36,7 @@ export function HeroSection() {
               className="object-cover rounded-full"
               priority
             />
-            <div className="absolute -top-4 right-4 bg-white rounded-full px-6 py-3 text-primary font-semibold transform rotate-6">
+            <div className="absolute -bottom-4 right-4 bg-white rounded-full px-6 py-3 text-[#004B87] font-semibold transform -rotate-6">
               Schedule your cleaning today!
             </div>
           </div>
