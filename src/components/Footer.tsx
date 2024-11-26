@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
           <div className="flex flex-col ">
             <p className="text-xs text-gray-500 sm:mb-0">
-              © 2024 Top Pro Painting. All rights reserved.
+              © 2024 Marx's Cleaning. All rights reserved.
             </p>
             <div className="text-xs text-gray-500 mt-1 text-center md:text-left">
               <a
