@@ -37,7 +37,7 @@ const faqs = [
 export function FAQSection() {
   return (
     <section className="py-16 px-4 flex flex-col md:flex-row  items-center md:mx-44">
-      <div className="md:w-[700px] w-screen mb-10 md:mb-0 md:mt-20 ">
+      <div className="md:w-[900px] w-screen mb-10 md:mb-0 md:mt-20 ">
       <AspectRatio ratio={5 / 4}>
                 <Image
                   src={"/area.png"}
@@ -47,7 +47,7 @@ export function FAQSection() {
                 />
               </AspectRatio>
       </div>
-      <div className=" max-w-4xl mx-auto">
+      <div className=" max-w-2xl">
         <h2 className="text-3xl font-bold text-center text-[#004B87] mb-12">Frequently Asked Questions</h2>
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
