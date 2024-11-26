@@ -30,8 +30,14 @@ export default function Footer() {
               Contact Us
             </h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>Phone: (239) 271-9367</li>
-              <li>Email: management@marxscleaning.com</li>
+              <li>
+                <a href="tel:+1239271-9367">Phone: (239) 271-9367</a>
+              </li>
+              <li>
+                <a href="mailto:management@marxscleaning.com">
+                  Email: management@marxscleaning.com
+                </a>
+              </li>
               <li>Address: 1817 Hancock Bridge Pkwy, Cape Coral, FL 33990</li>
             </ul>
           </div>
