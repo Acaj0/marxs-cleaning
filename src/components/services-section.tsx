@@ -57,9 +57,9 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 bg-[#004B87]">
       <div className="">
-        <h2 className="text-3xl font-bold text-center text-[#004B87] mb-12">
+        <h2 className="text-3xl font-bold text-center text-white mb-12">
           Our Cleaning Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
