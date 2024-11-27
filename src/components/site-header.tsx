@@ -59,25 +59,24 @@ export default function SiteHeader() {
                   <h3 className="text-lg font-semibold"></h3>
                   <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                     <li className=" hover:underline">
-                      <a href="/interior">Regular Cleaning</a>
+                      <a href="/services/regular-cleaning">Regular Cleaning</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="exterior-painting">Deep Cleaning</a>
+                      <a href="/services/deep-cleaning">Deep Cleaning</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="commercial-painting">Move In/Out</a>
+                      <a href="/services/move-in-out">Move In/Out</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="new-construction">Vacation Home</a>
+                      <a href="/services/vacation-home">Vacation Home</a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="new-construction">Vaction Home</a>
+                      <a href="/services/post-construction">
+                        Post Construction
+                      </a>
                     </li>
                     <li className=" hover:underline">
-                      <a href="new-construction">Post Construction</a>
-                    </li>
-                    <li className=" hover:underline">
-                      <a href="new-construction">Commercial</a>
+                      <a href="/services/commercial">Commercial</a>
                     </li>
                     <li className=" hover:underline">
                       <a href="new-construction">Cancellation Policy</a>
@@ -143,25 +142,26 @@ const MobileNav = () => {
                     <h3 className="text-lg font-semibold"></h3>
                     <ul className="flex flex-col gap-5 p-6 md:w-[300px] lg:w-[300px] text-[#004a82]">
                       <li className=" hover:underline">
-                        <a href="/interior">Regular Cleaning</a>
+                        <a href="/services/regular-cleaning">
+                          Regular Cleaning
+                        </a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="exterior-painting">Deep Cleaning</a>
+                        <a href="/services/deep-cleaning">Deep Cleaning</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="commercial-painting">Move In/Out</a>
+                        <a href="/services/move-in-out">Move In/Out</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="new-construction">Vacation Home</a>
+                        <a href="/services/vacation-home">Vacation Home</a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="new-construction">Vaction Home</a>
+                        <a href="/services/post-construction">
+                          Post Construction
+                        </a>
                       </li>
                       <li className=" hover:underline">
-                        <a href="new-construction">Post Construction</a>
-                      </li>
-                      <li className=" hover:underline">
-                        <a href="new-construction">Commercial</a>
+                        <a href="/services/commercial">Commercial</a>
                       </li>
                       <li className=" hover:underline">
                         <a href="new-construction">Cancellation Policy</a>
