@@ -78,9 +78,6 @@ export default function SiteHeader() {
                     <li className=" hover:underline">
                       <a href="/services/commercial">Commercial</a>
                     </li>
-                    <li className=" hover:underline">
-                      <a href="new-construction">Cancellation Policy</a>
-                    </li>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -91,6 +88,12 @@ export default function SiteHeader() {
             href="/guarantee"
           >
             Guarantee
+          </a>
+          <a
+            className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 rounded-md"
+            href="/cancellation-policy"
+          >
+            Cancellation Policy
           </a>
         </div>
       </div>
@@ -163,9 +166,6 @@ const MobileNav = () => {
                       <li className=" hover:underline">
                         <a href="/services/commercial">Commercial</a>
                       </li>
-                      <li className=" hover:underline">
-                        <a href="new-construction">Cancellation Policy</a>
-                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -176,6 +176,12 @@ const MobileNav = () => {
               className="transition font-semibold w-32 ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 text-xl rounded-md"
             >
               Guarantee
+            </a>
+            <a
+              className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100 hover:bg-accent/50 px-4 py-2 rounded-md"
+              href="/cancellation-policy"
+            >
+              Cancellation Policy
             </a>
           </div>
         </DialogTitle>

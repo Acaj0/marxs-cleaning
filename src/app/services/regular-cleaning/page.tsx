@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import SiteHeader from "@/components/site-header";
 import Footer from "@/components/Footer";
 import { RegularCleaningBenefits } from "@/components/service-benefits";
+import { FloatingContact } from "@/components/floating-contact";
 
 export const metadata: Metadata = {
   title: "Regular Cleaning Services | Marx's Cleaning",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
       "Professional regular cleaning services to keep your home consistently clean and tidy. Book your regular cleaning with Marx's Cleaning today!",
     images: [
       {
-        url: "/regular-cleaning.jpg",
+        url: "/regular.jpg",
         width: 1200,
         height: 630,
         alt: "Regular Cleaning Services",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 export default function RegularCleaningPage() {
   return (
     <div>
-      <SiteHeader />
+      <SiteHeader /> <FloatingContact/>
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center mb-8 text-[#004a82]">
           Regular Cleaning
