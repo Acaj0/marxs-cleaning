@@ -63,9 +63,11 @@ export default function CancellationPolicyPage() {
               cancellation policy. It helps us maintain a reliable service for
               all our clients.
             </p>
-            <Button size="lg" className="bg-[#004a82]">
-              Book a Cleaning
-            </Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book a Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg mb-10 text-white">
@@ -74,7 +76,9 @@ export default function CancellationPolicyPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-4 bg-white  rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 text-[#004a82]">24-Hour Notice</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#004a82]">
+                24-Hour Notice
+              </h3>
               <p className="text-gray-800">
                 We kindly request at least 24 hours' notice for any
                 cancellations to allow us to reallocate our cleaning teams
@@ -89,7 +93,7 @@ export default function CancellationPolicyPage() {
                 A $50 fee may be applied for cancellations made with less than
                 24 hours' notice to cover operational costs.
               </p>
-            </div> 
+            </div>
             <div className="p-4 bg-white  rounded-lg text-[#004a82]">
               <h3 className="text-xl font-semibold mb-2">Rescheduling</h3>
               <p className="text-gray-800">

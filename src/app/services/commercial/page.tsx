@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { CommercialCleaningBenefits, MoveInOutBenefits } from "@/components/service-benefits";
+import {
+  CommercialCleaningBenefits,
+  MoveInOutBenefits,
+} from "@/components/service-benefits";
 import Footer from "@/components/Footer";
 import { FloatingContact } from "@/components/floating-contact";
 import SiteHeader from "@/components/site-header";
@@ -24,7 +27,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-
 
 export default function CommercialPage() {
   return (
@@ -55,7 +57,9 @@ export default function CommercialPage() {
               needs of your business, ensuring a clean and professional
               environment.
             </p>
-            <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">What's Included:</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">
+              What's Included:
+            </h2>
             <ul className="list-disc list-inside mb-6">
               <li>Regular cleaning of office spaces and common areas</li>
               <li>Sanitizing of high-touch surfaces</li>
@@ -64,7 +68,11 @@ export default function CommercialPage() {
               <li>Trash removal and recycling</li>
               <li>Floor care (vacuuming, mopping, buffing)</li>
             </ul>
-            <Button size="lg" className="bg-[#004a82]">Book Commercial Cleaning</Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book Commercial Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg  mb-10">

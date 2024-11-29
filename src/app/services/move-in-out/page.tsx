@@ -63,9 +63,10 @@ export default function MoveInOutPage() {
               <li>Carpet cleaning (additional charge may apply)</li>
               <li>Window cleaning</li>
             </ul>
+            <a href="/#contact">
             <Button size="lg" className="bg-[#004a82]">
               Book Move In/Out Cleaning
-            </Button>
+            </Button></a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg mb-10">

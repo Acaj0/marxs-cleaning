@@ -48,7 +48,7 @@ const reviews = [
 
 export function ReviewsSection() {
   return (
-    <section className="py-5 px-4 bg-white">
+    <section className="py-5 px-4 bg-white" id="services">
       <div className="items-center flex flex-col">
         <h2 className="text-3xl font-bold text-center text-[#004B87] mb-2">
           Thumbtack Reviews

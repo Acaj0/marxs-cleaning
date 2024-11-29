@@ -83,13 +83,13 @@ export default function Footer() {
           <nav className="flex gap-4 sm:gap-6 mt-5">
             <Link
               className="text-xs text-gray-500 hover:underline underline-offset-4"
-              href="/terms-service/#terms"
+              href="/terms-and-privacy/#terms"
             >
               Terms of Service
             </Link>
             <Link
               className="text-xs text-gray-500 hover:underline underline-offset-4"
-              href="/terms-service/#privacy"
+              href="/terms-and-privacy/#privacy"
             >
               Privacy Policy
             </Link>

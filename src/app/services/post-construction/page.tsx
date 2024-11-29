@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { MoveInOutBenefits, PostConstructionBenefits } from "@/components/service-benefits";
+import {
+  MoveInOutBenefits,
+  PostConstructionBenefits,
+} from "@/components/service-benefits";
 import Footer from "@/components/Footer";
 import { FloatingContact } from "@/components/floating-contact";
 import SiteHeader from "@/components/site-header";
@@ -64,9 +67,11 @@ export default function PostConstructionPage() {
               <li>Floor cleaning and polishing</li>
               <li>Sanitizing of all areas</li>
             </ul>
-            <Button size="lg" className="bg-[#004a82]">
-              Book Post Construction Cleaning
-            </Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book Post Construction Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg mb-10 ">

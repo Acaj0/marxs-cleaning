@@ -63,9 +63,11 @@ export default function GuaranteePage() {
               within 24 hours, and we'll re-clean the areas in question at no
               additional cost.
             </p>
-            <Button size="lg" className="bg-[#004a82]">
-              Book a Cleaning
-            </Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book a Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg mb-10 text-white">

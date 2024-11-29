@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function RegularCleaningPage() {
   return (
     <div>
-      <SiteHeader /> <FloatingContact/>
+      <SiteHeader /> <FloatingContact />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center mb-8 text-[#004a82]">
           Regular Cleaning
@@ -63,16 +63,17 @@ export default function RegularCleaningPage() {
               <li>Emptying trash bins</li>
               <li>Making beds (linens changed upon request)</li>
             </ul>
-            <Button size="lg" className="bg-[#004a82]">
-              Book Regular Cleaning
-            </Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book Regular Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg ">
-        <RegularCleaningBenefits />
+          <RegularCleaningBenefits />
+        </div>
       </div>
-      </div>
-      
       <Footer />
     </div>
   );

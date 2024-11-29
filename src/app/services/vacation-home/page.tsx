@@ -3,7 +3,10 @@ import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/site-header";
 import { FloatingContact } from "@/components/floating-contact";
 import Footer from "@/components/Footer";
-import { MoveInOutBenefits, VacationHomeBenefits } from "@/components/service-benefits";
+import {
+  MoveInOutBenefits,
+  VacationHomeBenefits,
+} from "@/components/service-benefits";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -65,9 +68,11 @@ export default function VacationHomePage() {
               <li>Outdoor area tidying (patios, decks)</li>
               <li>Inspection for maintenance issues</li>
             </ul>
-            <Button size="lg" className="bg-[#004a82]">
-              Book Vacation Home Cleaning
-            </Button>
+            <a href="/#contact">
+              <Button size="lg" className="bg-[#004a82]">
+                Book Vacation Home Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg mb-10">

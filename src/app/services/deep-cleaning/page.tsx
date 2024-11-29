@@ -29,9 +29,12 @@ export default function DeepCleaningPage() {
   return (
     <div>
       {" "}
-      <SiteHeader /><FloatingContact/>
+      <SiteHeader />
+      <FloatingContact />
       <div className="container mx-auto px-4 py-8 ">
-        <h1 className="text-4xl font-bold text-center mb-8 text-[#004a82] ">Deep Cleaning</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-[#004a82] ">
+          Deep Cleaning
+        </h1>
         <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
           <div className="relative h-64 md:h-full">
             <Image
@@ -51,7 +54,9 @@ export default function DeepCleaningPage() {
               Our deep cleaning service goes beyond the surface to ensure a
               thorough and comprehensive clean for your entire home.
             </p>
-            <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">What's Included:</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">
+              What's Included:
+            </h2>
             <ul className="list-disc list-inside mb-6">
               <li>All regular cleaning tasks</li>
               <li>Detailed cleaning of kitchen appliances</li>
@@ -60,14 +65,18 @@ export default function DeepCleaningPage() {
               <li>Washing of windows and sills</li>
               <li>Dusting of ceiling fans and light fixtures</li>
             </ul>
-            <Button size="lg" className=" bg-[#004a82]">Book Deep Cleaning</Button>
+            <a href="/#contact">
+              <Button size="lg" className=" bg-[#004a82]">
+                Book Deep Cleaning
+              </Button>
+            </a>
           </div>
         </div>
         <div className="bg-[#004a82] px-2 py-10 rounded-lg ">
           <DeepCleaningBenefits />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
