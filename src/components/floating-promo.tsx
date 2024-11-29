@@ -59,7 +59,7 @@ export default function FloatingPromo() {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 max-w-sm bg-card text-card-foreground rounded-lg shadow-inner  transition-all duration-300 z-50 ease-in-out">
+    <div className="fixed bottom-4 left-4 mr-4  max-w-sm bg-card text-card-foreground border-2 border-primary rounded-lg shadow-lg drop-shadow-lg transition-all duration-300 z-50 ease-in-out">
       <div className="p-4">
         <button
           onClick={() => setIsOpen(false)}
