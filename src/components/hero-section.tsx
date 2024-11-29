@@ -1,9 +1,9 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#004B87] px-2 md:px-20 text-white" >
+    <section className="relative overflow-hidden bg-[#004B87] px-2 md:px-20 text-white">
       <div className="absolute right-0 top-0 h-16 w-16">
         <div className="absolute right-8 top-8 grid grid-cols-3 gap-1">
           {[...Array(9)].map((_, i) => (
@@ -23,9 +23,15 @@ export function HeroSection() {
           <p className="max-w-[600px] font-semibold text-white/80">
             Top-notch cleaning services just a click away.
           </p>
-          <Button size="lg" variant="secondary" className="font-bold text-[#004B87]">
-            GET A FREE QUOTE
-          </Button>
+          <a href="/#contact">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="font-bold text-[#004B87]"
+            >
+              GET A FREE QUOTE
+            </Button>
+          </a>
         </div>
         <div className="w-full md:w-1/2 mt-8 md:mt-0">
           <div className="relative h-[400px] w-full">
@@ -44,6 +50,5 @@ export function HeroSection() {
       </div>
       <div className="absolute -z-0 bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-background" />
     </section>
-  )
+  );
 }
-

@@ -6,6 +6,7 @@ import { ReviewsSection } from "@/components/reviews-section";
 import { FAQSection } from "@/components/faq-section";
 import { ContactSection } from "@/components/contact-section";
 import Footer from "@/components/Footer";
+import FloatingPromo from "@/components/floating-promo";
 
 export default function Home() {
   return (
@@ -16,9 +17,9 @@ export default function Home() {
         <FeaturesSection />
         <ReviewsSection />
         <ServicesSection />
-        <FAQSection/>
-        <ContactSection/>
-        <Footer/>
+        <FAQSection />
+        <ContactSection />
+        <Footer />
       </main>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import FloatingPromo from "@/components/floating-promo";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +34,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>{children}<FloatingPromo/></body>
     </html>
   );
 }
