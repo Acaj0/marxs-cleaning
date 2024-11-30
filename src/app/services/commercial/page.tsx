@@ -60,13 +60,8 @@ export default function CommercialPage() {
             <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">
               What's Included:
             </h2>
-            <ul className="list-disc list-inside mb-6">
-              <li>Regular cleaning of office spaces and common areas</li>
-              <li>Sanitizing of high-touch surfaces</li>
-              <li>Restroom cleaning and restocking</li>
-              <li>Kitchen and break room cleaning</li>
-              <li>Trash removal and recycling</li>
-              <li>Floor care (vacuuming, mopping, buffing)</li>
+            <ul className="list-disc list-inside mb-44">
+              <li>Exclusively available upon request</li>
             </ul>
             <a href="/#contact">
               <Button size="lg" className="bg-[#004a82]">

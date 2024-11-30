@@ -57,11 +57,20 @@ export default function RegularCleaningPage() {
               What's Included:
             </h2>
             <ul className="list-disc list-inside mb-6">
-              <li>Dusting and wiping of all surfaces</li>
-              <li>Vacuuming and mopping of floors</li>
-              <li>Bathroom and kitchen cleaning</li>
-              <li>Emptying trash bins</li>
-              <li>Making beds (linens changed upon request)</li>
+              <li>Clean all rooms.</li>
+              <li>Dusting.</li>
+              <li>Bed Made.</li>
+              <li>Remove Trash.</li>
+              <li>Clean windowsills.</li>
+              <li>Mirrors cleaning.</li>
+              <li>Clean microwave.</li>
+              <li>Clean stove.</li>
+              <li>Bathtub.</li>
+              <li>Shower scrubbed.</li>
+              <li>Washed bathroom glass.</li>
+              <li>Floor and Carpet Care - Vacuum carpets, rugs and floor.</li>
+              <li>Floor and Carpet Care - Mop all floor types.</li>
+              <li>Stainless Steel Maintenance - Condition stainless steel.</li>
             </ul>
             <a href="/#contact">
               <Button size="lg" className="bg-[#004a82]">

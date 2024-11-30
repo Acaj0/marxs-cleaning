@@ -8,6 +8,12 @@ import Footer from "@/components/Footer";
 import { FloatingContact } from "@/components/floating-contact";
 import SiteHeader from "@/components/site-header";
 import { Metadata } from "next";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
   title: "Post-Construction Cleaning Services | Marx's Cleaning",
@@ -59,14 +65,87 @@ export default function PostConstructionPage() {
             <h2 className="text-2xl font-semibold mb-4 text-[#004a82]">
               What's Included:
             </h2>
-            <ul className="list-disc list-inside mb-6">
-              <li>Removal of construction dust and debris</li>
-              <li>Cleaning of all surfaces, including walls and ceilings</li>
-              <li>Detailed cleaning of fixtures and fittings</li>
-              <li>Window and glass cleaning</li>
-              <li>Floor cleaning and polishing</li>
-              <li>Sanitizing of all areas</li>
-            </ul>
+            <div className="max-w-3xl mx-auto p-1">
+              <Accordion type="single" collapsible className="w-full mb-10">
+                <AccordionItem value="housekeeping">
+                  <AccordionTrigger className="text-[#004a82]">
+                    Bedroom
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="list-disc pl-6">
+                      <li>All surfaces dusted</li>
+                      <li>Carpet and area rugs vacuumed</li>
+                      <li>Hard surface floors vacuumed and damp-mopped</li>
+                      <li>Closet fronts and insides cleaned</li>
+                      <li>Marks on walls and baseboards cleaned</li>
+                      <li>Mirrors cleaned</li>
+                      <li>Windowsills and window tracks cleaned</li>
+                      <li>Baseboards dusted and/or wiped</li>
+                      <li>Doorknobs, doorframes and doors wiped</li>
+                      <li>Light switches wiped</li>
+                      <li>Garbage and recycling bins emptied</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="kitchen">
+                  <AccordionTrigger className="text-[#004a82]">
+                    Kitchen
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="list-disc pl-6">
+                      <li>Cabinet fronts and inside cleaned</li>
+                      <li>Countertops and shelves dusted and/or wiped</li>
+                      <li>Sinks and backsplash washed</li>
+                      <li>Windows inside cleaned</li>
+                      <li>
+                        Appliance exteriors cleaned (stovetop, oven, range hood,
+                        fridge, microwave, dishwasher)
+                      </li>
+                      <li>
+                        Small appliances wiped (microwave, toaster, coffee
+                        maker)
+                      </li>
+                      <li>All surfaces dusted</li>
+                      <li>Windowsills and window tracks cleaned</li>
+                      <li>Baseboards dusted and/or wiped</li>
+                      <li>Doorknobs, doorframes and doors wiped</li>
+                      <li>Light switches wiped</li>
+                      <li>Marks on walls and baseboards cleaned</li>
+                      <li>Garbage and recycling bins emptied</li>
+                      <li>Floor vacuumed and washed</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="bathroom">
+                  <AccordionTrigger className="text-[#004a82]">
+                    Bathroom
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="list-disc pl-6">
+                      <li>Sink cleaned and sanitized</li>
+                      <li>
+                        Bathtub, shower walls and glass doors cleaned and
+                        sanitized
+                      </li>
+                      <li>Toilet cleaned and sanitized inside and out</li>
+                      <li>Mirrors cleaned</li>
+                      <li>Cabinet fronts and inside cleaned</li>
+                      <li>Countertops and shelves dusted and/or wiped</li>
+                      <li>All surfaces dusted</li>
+                      <li>Windows inside cleaned</li>
+                      <li>Windowsills and window tracks cleaned</li>
+                      <li>Baseboards dusted and/or wiped</li>
+                      <li>Doorknobs, doorframes and doors wiped</li>
+                      <li>Light switches wiped</li>
+                      <li>Garbage and recycling bins emptied</li>
+                      <li>Floor vacuumed and washed</li>
+                      <li>Marks on walls and baseboards cleaned</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
             <a href="/#contact">
               <Button size="lg" className="bg-[#004a82]">
                 Book Post Construction Cleaning
