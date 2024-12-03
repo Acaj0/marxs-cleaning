@@ -102,6 +102,7 @@ export default function MoveInOutPage() {
                       <li>Clean microwave</li>
                       <li>Clean stove</li>
                       <li>Clean inside oven</li>
+                      <li>Cabinet fronts and inside cleaned</li>
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
@@ -114,6 +115,7 @@ export default function MoveInOutPage() {
                       <li>Bathtub.</li>
                       <li>Shower scrubbed.</li>
                       <li>Washed Bathroom Glass.</li>
+                      <li>Cabinet fronts and inside cleaned</li>
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
