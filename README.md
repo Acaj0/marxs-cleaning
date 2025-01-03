@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Marx's Cleaning
+Bem-vindo ao repositório oficial do site da Marx's Cleaning! Este projeto é a presença digital da nossa empresa de limpeza, projetado para oferecer informações claras sobre nossos serviços e um formulário de contato funcional para nossos clientes.
 
-## Getting Started
+Tecnologias Utilizadas
+Next.js: Framework React para construção de aplicações modernas e otimizadas.
+Tailwind CSS: Framework CSS para estilização eficiente e responsiva.
+Resend: Serviço utilizado para gerenciamento de envios de e-mail, especialmente no formulário de contato.
+Funcionalidades
+Página Inicial: Apresentação da Marx's Cleaning, destacando os serviços oferecidos.
+Serviços: Detalhes sobre os tipos de limpeza disponíveis.
+Formulário de Contato: Permite que os clientes entrem em contato diretamente com a empresa. Os envios são processados de forma confiável com Resend.
+Design Responsivo: Totalmente otimizado para dispositivos móveis, tablets e desktops.
+Como Rodar Localmente
+Siga os passos abaixo para configurar o projeto localmente:
 
-First, run the development server:
+Pré-requisitos
+Node.js (v16 ou superior)
+Yarn ou npm instalado
+Instalação
+Clone este repositório:
 
-```bash
+bash
+Copiar código
+git clone https://github.com/Acaj0/marxs-cleaning.git
+Navegue até o diretório do projeto:
+
+bash
+Copiar código
+cd marxs-cleaning
+Instale as dependências:
+
+bash
+Copiar código
+npm install
+ou
+
+bash
+Copiar código
+yarn install
+Configure as variáveis de ambiente:
+
+Crie um arquivo .env.local na raiz do projeto e adicione suas chaves API do Resend, e quaisquer outras configurações necessárias.
+Inicie o servidor de desenvolvimento:
+
+bash
+Copiar código
 npm run dev
-# or
+ou
+
+bash
+Copiar código
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse no navegador:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O site estará disponível em http://localhost:3000.
+Estrutura do Projeto
+plaintext
+Copiar código
+.
+├── components/         # Componentes reutilizáveis do site
+├── pages/              # Páginas do Next.js
+├── public/             # Arquivos estáticos
+├── styles/             # Arquivos de estilo (Tailwind)
+├── utils/              # Funções auxiliares
+├── .env.local.example  # Exemplo do arquivo de configuração de variáveis de ambiente
+└── README.md           # Documentação do projeto
+Contribuindo
+Contribuições são bem-vindas! Se você encontrar problemas ou tiver ideias para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Licença
+Este projeto é de propriedade da Marx's Cleaning e não está sob licença de código aberto.
