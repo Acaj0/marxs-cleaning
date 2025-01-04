@@ -1,71 +1,66 @@
-Marx's Cleaning
-Bem-vindo ao repositório oficial do site da Marx's Cleaning! Este projeto é a presença digital da nossa empresa de limpeza, projetado para oferecer informações claras sobre nossos serviços e um formulário de contato funcional para nossos clientes.
+# Marx's Cleaning
 
-Tecnologias Utilizadas
-Next.js: Framework React para construção de aplicações modernas e otimizadas.
-Tailwind CSS: Framework CSS para estilização eficiente e responsiva.
-Resend: Serviço utilizado para gerenciamento de envios de e-mail, especialmente no formulário de contato.
-Funcionalidades
-Página Inicial: Apresentação da Marx's Cleaning, destacando os serviços oferecidos.
-Serviços: Detalhes sobre os tipos de limpeza disponíveis.
-Formulário de Contato: Permite que os clientes entrem em contato diretamente com a empresa. Os envios são processados de forma confiável com Resend.
-Design Responsivo: Totalmente otimizado para dispositivos móveis, tablets e desktops.
-Como Rodar Localmente
-Siga os passos abaixo para configurar o projeto localmente:
+Marx's Cleaning é uma aplicação web desenvolvida com **Next.js** para geração de leads. Este projeto combina frontend moderno com funcionalidades de backend, autenticação robusta e uma interface estilizada com **Tailwind CSS** e **Shadcn UI**.
 
-Pré-requisitos
-Node.js (v16 ou superior)
-Yarn ou npm instalado
-Instalação
-Clone este repositório:
+## 🚀 Funcionalidades
 
-bash
-Copiar código
-git clone https://github.com/Acaj0/marxs-cleaning.git
-Navegue até o diretório do projeto:
+- **Formulario Enviado no Email**: Envio automatico do forumlario de Lead ao email do Cliente.
+- **Integração com APIs**: Suporte para exibir dados de posts.
+- **Estilização Moderna**: UI construída com Tailwind CSS e Shadcn UI.
 
-bash
-Copiar código
-cd marxs-cleaning
-Instale as dependências:
+## 🛠️ Tecnologias Utilizadas
 
-bash
-Copiar código
-npm install
-ou
+- [Next.js](https://nextjs.org/) - Framework React para desenvolvimento web.
+- [Tailwind CSS](https://tailwindcss.com/) - Estilização utilitária moderna.
+- [Shadcn UI](https://shadcn.dev/) - Biblioteca de componentes para React.
 
-bash
-Copiar código
-yarn install
-Configure as variáveis de ambiente:
 
-Crie um arquivo .env.local na raiz do projeto e adicione suas chaves API do Resend, e quaisquer outras configurações necessárias.
-Inicie o servidor de desenvolvimento:
+## 📂 Estrutura do Projeto
 
-bash
-Copiar código
-npm run dev
-ou
+```plaintext
+/src
+  |-- components  # Componentes reutilizáveis (UI, modais, etc.)
+  |-- styles      # Arquivos de estilos customizados
+```
 
-bash
-Copiar código
-yarn dev
-Acesse no navegador:
+## 🔧 Como Rodar o Projeto Localmente
 
-O site estará disponível em http://localhost:3000.
-Estrutura do Projeto
-plaintext
-Copiar código
-.
-├── components/         # Componentes reutilizáveis do site
-├── pages/              # Páginas do Next.js
-├── public/             # Arquivos estáticos
-├── styles/             # Arquivos de estilo (Tailwind)
-├── utils/              # Funções auxiliares
-├── .env.local.example  # Exemplo do arquivo de configuração de variáveis de ambiente
-└── README.md           # Documentação do projeto
-Contribuindo
-Contribuições são bem-vindas! Se você encontrar problemas ou tiver ideias para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+### Pré-requisitos
+- Node.js (versão 16 ou superior)
+- Gerenciador de pacotes (npm ou yarn)
 
-Licença
-Este projeto é de propriedade da Marx's Cleaning e não está sob licença de código aberto.
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/zafaloon-filmmaker.git
+   cd zafaloon-filmmaker
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse o projeto em [http://localhost:3000](http://localhost:3000).
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+- Faça um fork deste repositório.
+- Crie uma branch com sua feature ou correção de bug: `git checkout -b minha-feature`.
+- Faça o commit das suas alterações: `git commit -m 'Minha nova feature'`.
+- Envie para a branch principal: `git push origin minha-feature`.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+💡 **Dica**: Este projeto foi desenvolvido com foco no aprendizado de tecnologias modernas de desenvolvimento web. Sinta-se à vontade para adaptá-lo às suas necessidades e evoluir com novas funcionalidades.
