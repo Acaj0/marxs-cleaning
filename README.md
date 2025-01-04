@@ -33,8 +33,8 @@ Marx's Cleaning é uma aplicação web desenvolvida com **Next.js** para geraç�
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/zafaloon-filmmaker.git
-   cd zafaloon-filmmaker
+   git clone https://github.com/Acaj0/marxs-cleaning.git
+   cd marxs-cleaning
    ```
 
 2. Instale as dependências:
