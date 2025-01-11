@@ -24,7 +24,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { useToast } from "@/components/ui/use-toast"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 const formSchema = z.object({
   service: z.string().min(1, "Please select a service"),
@@ -32,6 +32,9 @@ const formSchema = z.object({
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Phone number must be at least 10 digits"),
   message: z.string().min(10, "Message must be at least 10 characters"),
+  preferredContact: z.enum(["SMS", "Call", "Email"], {
+    required_error: "Please select a preferred contact method",
+  }),
 })
 
 const services = [
@@ -45,7 +48,7 @@ const services = [
 
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const { toast } = useToast()
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -55,11 +58,13 @@ export function ContactSection() {
       email: "",
       phone: "",
       message: "",
+      preferredContact: undefined,
     },
   })
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
+    setSubmissionStatus('idle')
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -73,17 +78,10 @@ export function ContactSection() {
         throw new Error("Failed to send message")
       }
 
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
-      })
+      setSubmissionStatus('success')
       form.reset()
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      })
+      setSubmissionStatus('error')
     } finally {
       setIsSubmitting(false)
     }
@@ -160,6 +158,48 @@ export function ContactSection() {
             />
             <FormField
               control={form.control}
+              name="preferredContact"
+              render={({ field }) => (
+                <FormItem className="space-y-3">
+                  <FormLabel className="text-[#004B87] font-semibold">Preferred Contact Method</FormLabel>
+                  <FormControl>
+                    <RadioGroup
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                      className="flex flex-col space-y-1"
+                    >
+                      <FormItem className="flex items-center space-x-3 space-y-0">
+                        <FormControl>
+                          <RadioGroupItem value="SMS" />
+                        </FormControl>
+                        <FormLabel className="font-normal">
+                          SMS
+                        </FormLabel>
+                      </FormItem>
+                      <FormItem className="flex items-center space-x-3 space-y-0">
+                        <FormControl>
+                          <RadioGroupItem value="Call" />
+                        </FormControl>
+                        <FormLabel className="font-normal">
+                          Call
+                        </FormLabel>
+                      </FormItem>
+                      <FormItem className="flex items-center space-x-3 space-y-0">
+                        <FormControl>
+                          <RadioGroupItem value="Email" />
+                        </FormControl>
+                        <FormLabel className="font-normal">
+                          Email
+                        </FormLabel>
+                      </FormItem>
+                    </RadioGroup>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
               name="message"
               render={({ field }) => (
                 <FormItem>
@@ -183,6 +223,16 @@ export function ContactSection() {
             </Button>
           </form>
         </Form>
+        {submissionStatus === 'success' && (
+          <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+            Thank you for your message! We will contact you soon via your preferred method.
+          </div>
+        )}
+        {submissionStatus === 'error' && (
+          <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+            There was an error sending your message. Please try again later.
+          </div>
+        )}
       </div>
     </section>
   )

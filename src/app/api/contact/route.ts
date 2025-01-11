@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    const { service, name, email, phone, message } = body
+    const { service, name, email, phone, message, preferredContact } = body
 
     const { data, error } = await resend.emails.send({
       from: "Marx's Cleaning Website <onboarding@resend.dev>",
@@ -17,6 +17,7 @@ export async function POST(req: Request) {
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
+        Preferred Contact Method: ${preferredContact}
         Message: ${message}
       `,
     })
@@ -30,4 +31,3 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Internal server error" })
   }
 }
-
