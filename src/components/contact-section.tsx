@@ -30,7 +30,7 @@ const formSchema = z.object({
   service: z.string().min(1, "Please select a service"),
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Phone number must be at least 10 digits"),
+  phone: z.string().regex(/^(\+1\s?)?(\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$/, "Invalid phone number, insert one of the following formats: (XXX) XXX-XXXX, XXX-XXX-XXXX, XXXXXXXXXX"),
   message: z.string().min(10, "Message must be at least 10 characters"),
   preferredContact: z.enum(["SMS", "Call", "Email"], {
     required_error: "Please select a preferred contact method",
