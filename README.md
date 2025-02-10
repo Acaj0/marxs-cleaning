@@ -57,9 +57,6 @@ Contribuições são bem-vindas! Para contribuir:
 - Faça o commit das suas alterações: `git commit -m 'Minha nova feature'`.
 - Envie para a branch principal: `git push origin minha-feature`.
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
 
 ---
 
